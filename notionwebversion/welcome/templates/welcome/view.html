@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Notion</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link class="light" rel="stylesheet" href="{% static 'welcome/style.css' %}" >
+    </head>
+    <body>
+        <header class="header">            
+            <div class="header__background">
+                <img class="waves-light" src="{% static 'welcome/img/Vector 1.svg' %}">
+                <img class="waves-dark unvisible" src="{% static 'welcome/img/waves-white.svg' %}">
+            </div>
+            <div class="header__content">
+                <div>
+                    <a onclick="MyFunction()"><img class="logo" src="{% static 'welcome/img/notion-white-logo.png' %}"></a>
+                    <a onclick="MyFunction()"><img class="logo-dark unvisible" src="{% static 'welcome/img/notion-black-logo.png' %}"></a>
+                </div>
+                <nav><a class="nav-a" href="home-page.html"><b>Home</b></a></nav>
+                <nav><a class="nav-a" href="welcome/work-page.html"><b>Work</b></a></nav>
+                <nav><a class="nav-a" href="info-page.html"><b>Info</b></a></nav>
+                <nav><a class="button" href="register-page.html"><b>Register</b></a></nav>
+            </div>
+        </header>   
+        <main>
+            <div class="main-div">
+                <div class="welcome-text">
+                    <b class="big-text">Notion Pro</b>
+                    <b class="mini-text">Upgrade to Notion Pro for unlimited tasks, advanced<br> reminders, effortless collaboration, enhanced organization,<br> and priority support. Supercharge your to-do lists and<br> achieve your goals with ease. Get started now!</b>
+                    <div class="div_more ">
+                        Upgrade to Notion Pro for unlimited tasks, advanced<br> reminders, effortless collaboration, enhanced organization,<br> and priority support. Supercharge your to-do lists and<br> achieve your goals with ease. Get started now!
+                    </div>
+                    <div class="buttons">
+                        <a class="button-2" href="register-page.html"><b>Try Now</b></a>
+                        <a onclick="Visible_div()" class="button-3"><b>More</b></a>
+                </div>
+
+                <div class="pensil-div">
+                    <img src="{% static 'welcome/img/big-pensil.png' %}">
+                </div>
+            </div>
+        </main>
+        <footer>
+
+    </body>
+
+    <script src="{% static 'welcome/script.js' %}"></script>
+</html>

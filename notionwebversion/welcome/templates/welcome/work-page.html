@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="{% static 'welcome/css-for-work-page.css' %}" >
+    </head>
+    <body>
+        <header>
+            <img class="logo" src="{% static 'welcome/img/notion-white-logo.png' %}"></img>
+            <nav><a href="home-page.html"><b>Home</b></a></nav>
+            <nav><a href=""><b>Work</b></a></nav>
+            <nav><a href="info-page.html"><b>Info</b></a></nav>
+            <nav><a class="button" href="register-page.html"><b>Register</b></a></nav>
+
+        </header>   
+        <main>
+            <div class="welcome-text">
+                <b class="big-text">Notion Pro</b>
+                <b class="mini-text">Upgrade to Notion Pro for unlimited tasks, advanced<br> reminders, effortless collaboration, enhanced organization,<br> and priority support. Supercharge your to-do lists and<br> achieve your goals with ease. Get started now!</b>
+            </div>
+        </main>
+        <footer>
+
+    </body>
+
+    <script src="{% static 'welcome/script.js' %}"></script>
+</html>

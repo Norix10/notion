@@ -1,0 +1,277 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+    padding: 0px;
+    background-repeat: no-repeat;
+    height: 100%;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    background: linear-gradient(226deg, #4754FF 0%, #586EE6 53.18%, #5F7ADB 100%);
+    font-family: 'Montserrat', sans-serif;
+}   
+
+.body-dark{
+    background: linear-gradient(43deg, #A5DBDD 0%, #73ACB2 61.47%, #407C87 100%);
+}
+
+img {
+    display: block;
+    margin: 0;
+}
+
+.header {
+    display: flex;
+    position: relative;
+    background: #2E3239;
+    border-radius: 0 0 12px 12px;
+}
+
+.header-dark{
+    background: #E4E4E4;
+    display: flex;
+    position: relative;
+    border-radius: 0 0 12px 12px;
+}
+
+.header__background {
+    position: absolute;
+    max-height: 77px;
+    width: 100%;
+}
+.header__background img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 77px;
+}
+
+.header__background img:last-child{
+    left: px;
+    top: -9px;
+    position: relative;
+}
+
+
+.header__content {
+    position: relative;
+    padding: 15px 78px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.unvisible {
+    display: none;
+}
+
+
+
+.logo{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    float: left;
+    margin-left: 5%;
+    top: 26%;
+    left: 10%;
+}
+
+.logo-dark{
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+    float: left;
+    margin-left: 5%;
+    top: 26%;
+    left: 10%;
+}
+
+.logo:hover{
+    top: 23%;
+}
+
+.nav-a{
+    text-decoration: none;
+    color: #FFF;
+    font-size: 20px;
+    transition: 0.5s all;
+    
+}
+
+.nav-a:hover{
+    color: #dfdfdf;
+}
+
+
+.nav-a-dark{
+    text-decoration: none;
+    color: #20232b;
+    font-size: 20px;
+    transition: 0.5s all;
+}
+
+.nav-a-dark:hover{
+    color: #131419;
+}
+
+.button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 49px;
+    border-radius: 20px;
+    background: #FFF;
+    color: #2E3239;
+    transition: 0.5s all;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.button:hover{
+    background-color: #2E3239;
+    color: #fff;
+}
+
+.button-dark{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 130px;
+    height: 49px;
+    border-radius: 20px;
+    background: #2E3239;
+    color: #fff;
+    transition: 0.5s all
+}
+
+.button-dark:hover{
+    color: #2E3239;
+    background-color: #FFF;
+}
+
+main{
+    width: 100%;
+}
+
+.welcome-text{
+    width: 100%;
+    margin: 14% 15%;
+    max-width: 800px;
+    height: 100%;
+    max-height: 1400px;
+}
+.big-text{
+    align-items: center;
+    display: flex;
+    color: #FFF;
+    font-size: 48px;
+    font-weight: 700;
+    width: 271px;
+    flex-direction: column;
+    flex-shrink: 0;
+    margin-bottom: 15px;
+}
+
+.main-div{
+    display: flex;
+    position: relative;
+    max-height: 120px;
+    transition: 0.5s display;
+}
+
+.mini-text{
+    color: #FFF;
+    font-size: 18px;     
+    font-weight: 700;  
+    display: flex;
+    width: 757px;
+    flex-direction: column;
+    flex-shrink: 0; 
+    margin-bottom: 30px;
+    margin-bottom: 5%;
+}
+
+.div_more{
+    color: #FFF;
+    font-size: 18px;     
+    font-weight: 700;  
+    height: 0px;
+    width: 0px;
+    flex-direction: column;
+    flex-shrink: 0; 
+    margin-bottom: 30px;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+
+.button-2{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 45px;
+    border-radius: 20px;
+    background: #FFF;
+    color: #2E3239;
+    text-decoration: none; 
+    font-weight: bold;  
+    transition: 0.5s all;
+}
+
+
+.button-2:hover{
+    color: #000;
+    background-color: #dddddd;
+}
+.button-3{
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 135px;
+    height: 45px;
+    border-radius:20px;
+    background: #2E3239;
+    color: #fff;
+    text-decoration: none; 
+    font-weight: bold;  
+    transition: 0.5s all;
+    cursor: pointer;
+}
+
+.button-3:hover{
+    background-color: #000;
+    color: #ddd;
+}
+
+.buttons{
+    display: flex;
+}
+
+
+.buttons a{
+    margin: 0px 40px;
+}
+
+.pensil-div{
+    position: absolute;
+    margin-left: 35%;
+    top: 10%;
+    background-image: linear-gradient();
+    float: left;
+}
+.visible{
+    width: 550px;
+    height: 100px;
+}
