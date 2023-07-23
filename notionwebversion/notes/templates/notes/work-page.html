@@ -1,0 +1,52 @@
+{% load static %}
+{% extends "index.html" %}
+
+{% block content %}
+    <div class="content">
+        <nav class="boxes">
+            <div class="mini-box">
+
+                <div class="home-div">
+                    <img class="home-img" src="{% static 'notes/img/home.svg' %}">
+                    <a href="/" class="home-text">To the main page</a>
+                </div>
+                <div class="settings-div">
+                    <img class="settings-img" src="{% static 'notes/img/settings.svg' %}">
+                    <a class="settings-text">Settings</a>
+                </div>
+
+                <div class="glass-div">
+                    <img class="glass-img" src="{% static 'notes/img/glass.svg' %}">
+                    <a class="glass-text"><b>Search</b></a>
+                </div>
+            
+            
+            </div>
+            <div class="mid-box">
+                <nav class="mid-box__nav">
+                    <a class="trash"><img src="{% static 'notes/img/trash.svg' %}"></a>
+                    <a class="pen"><img src="{%static 'notes/img/pen.svg'%}"></a>
+                    <a class="plus" onclick="ListOne()">+</a> 
+                </nav>
+
+
+                
+                <nav class="mid-box__list">
+                    
+                    <div class="list-one unvisible">
+                        <a>
+                            <input class="input-1">
+                        </a>
+                    </div>
+
+                </nav>  
+            </div>
+
+        </nav>
+
+        <div class="large-box">
+            
+        </div>
+
+    </div>
+{% endblock %}

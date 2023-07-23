@@ -1,0 +1,209 @@
+* {
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0px;
+}
+
+body{
+    margin: 0px;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+}
+
+.content {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    flex: 0.8;
+    height: 100vh;
+}
+
+/* ------------mini-box----------- */
+
+.mini-box{
+    display: flex;
+    border-radius: 20px;
+    margin: 15px;
+    background: #EEEEEE;
+    flex: 1;
+    margin-bottom: 0;
+    flex-direction: column;
+    padding: 25px;
+}
+
+
+
+.home-div{
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.home-img{  
+    height: 30px;
+}
+
+.home-text{
+    margin-left: 4px;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    color: #000;
+}
+
+.home-text:hover{
+    color: #222222;
+}
+
+.settings-div{
+    cursor: pointer;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #000;
+}
+
+.settings-img{
+    height: 30px;
+}
+
+.settings-text{
+    margin-left: 4px;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.settings-text:hover{
+    color: #222222;
+}
+
+.glass-div{
+    cursor: pointer;;
+    margin-bottom: 10px;
+    border-bottom: 2px solid #000;
+}
+
+.glass-img{
+    height: 30px;
+}
+
+.glass-text{
+    text-decoration: none;
+    color: #000;
+    margin-left: 4px;
+    font-size: 1.15rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.glass-text:hover{
+    color: #222222;
+}
+
+
+/* ---------------mid-box----------------- */
+.mid-box{
+    margin: 15px;
+    border-radius: 20px;
+    background: #EEEEEE;
+    flex: 3;
+}
+
+.mid-box__nav{
+    margin-top: 13px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.trash{
+    cursor: pointer;
+    border-radius: 12px;
+    background: #2E3239;
+    padding: 7px 30px 4px 30px;
+    margin: 0 5px;
+    margin-left: 13px
+}
+
+.trash:hover{
+    background: #343841;
+}
+
+.pen{
+    cursor: pointer;
+    border-radius: 12px;
+    background: #2E3239;
+    padding: 6px 30px 5px 30px ;
+    margin: 0 5px;
+}
+
+.pen:hover{
+    background: #343841;
+}
+
+.plus{
+    cursor: pointer;
+    color: #fff;
+    border-radius: 12px;
+    background: #2E3239;
+    padding: 7px 30px 5px 30px;
+    font-weight: bold;
+    margin: 0 5px;
+    margin-right: 13px;
+    text-decoration: none;
+}    
+
+.plus:hover{
+    background: #343841;  
+}
+
+.mid-box__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.list-one{
+    text-align: center;
+    cursor: pointer;
+    color: #fff;
+    border-radius: 7px;
+    background: #2E3239;
+    padding: 7px 27px 7px 27px;
+    font-weight: bold;
+    margin: 0 14px;
+    transition: 0.5s all;
+}    
+
+.mid-box__list input:first-child{
+    background-color: #2E3239;
+}
+
+.unvisible{
+    display: none;
+}
+
+
+/* ---------------large-box----------------- */
+
+.large-box{
+    margin: 15px;
+    border-radius: 20px;
+    background: #EEEEEE;
+    flex: 3.5;
+}   
+

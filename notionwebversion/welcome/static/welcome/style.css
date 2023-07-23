@@ -73,6 +73,7 @@ img {
 
 
 .logo{
+    position: relative;
     width: 42px;
     height: 42px;
     cursor: pointer;
@@ -83,6 +84,7 @@ img {
 }
 
 .logo-dark{
+    position: relative;
     width: 42px;
     height: 42px;
     cursor: pointer;
@@ -90,10 +92,15 @@ img {
     margin-left: 5%;
     top: 26%;
     left: 10%;
+    
 }
 
 .logo:hover{
-    top: 23%;
+    top: -5px;
+}
+
+.logo-dark:hover{
+    top: -5px;
 }
 
 .nav-a{
@@ -266,10 +273,9 @@ main{
 
 .pensil-div{
     position: absolute;
-    margin-left: 35%;
-    top: 10%;
+    left: 115vh;
+    top: 5vw;
     background-image: linear-gradient();
-    float: left;
 }
 .visible{
     width: 550px;
