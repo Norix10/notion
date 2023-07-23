@@ -57,11 +57,25 @@
         <div class="large-box">
             <form action="{% url 'note_create' %}" method="post" >
                 {% csrf_token %}
-                <input name="name" placeholder="name og note">
-                <textarea name="body" rows="10"></textarea>
-                <button type="submit">
-                    Save
-                </button>
+                
+                <div class="work-content__div">
+
+                    <div class="name-input__div">
+                        <input class="name-input" name="name" placeholder="Name of note">
+                    </div>
+
+                    <div class="text-input__div">
+                        <textarea class="text-input" name="body" rows="10"></textarea>
+                    </div>
+
+                    <div class="button__div">
+                        <button type="submit">
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+
             </form>
         </div>
 

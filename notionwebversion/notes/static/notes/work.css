@@ -43,12 +43,13 @@ body{
 
 .home-div{
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     border-bottom: 2px solid #000;
 }
 
 .home-img{  
     height: 30px;
+    margin-bottom: 5px;
 }
 
 .home-text{
@@ -67,12 +68,13 @@ body{
 
 .settings-div{
     cursor: pointer;
-    margin-bottom: 20px;
+    margin-bottom: 45px;
     border-bottom: 2px solid #000;
 }
 
 .settings-img{
     height: 30px;
+    margin-bottom: 5px;
 }
 
 .settings-text{
@@ -91,13 +93,13 @@ body{
 }
 
 .glass-div{
-    cursor: pointer;;
-    margin-bottom: 10px;
+    cursor: pointer;
     border-bottom: 2px solid #000;
 }
 
 .glass-img{
     height: 30px;
+    margin-bottom: 5px;
 }
 
 .glass-text{
@@ -175,6 +177,7 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .list-one{
@@ -191,6 +194,8 @@ body{
 
 .mid-box__list input:first-child{
     background-color: #2E3239;
+    border: 0;
+    color: #fff;
 }
 
 .unvisible{
@@ -206,4 +211,27 @@ body{
     background: #EEEEEE;
     flex: 3.5;
 }   
+
+.work-content__div{
+    margin: 15px 20px;
+}
+
+.name-input{
+    border: 0;
+    background: #EEEEEE;
+}
+
+
+.text-input{
+    border: 0;
+    background: #f8f8f8;
+    width: 80vw;
+}
+
+.button__div button{
+    border: 0;
+    border-radius: 5px;
+    background: #fff;
+}
+
 
