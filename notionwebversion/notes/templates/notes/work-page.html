@@ -1,5 +1,11 @@
-{% load static %}
 {% extends "index.html" %}
+{% load static %}
+
+
+{% block css %}
+    <link class="light" rel="stylesheet" href="{% static 'notes/work.css' %}" >
+{% endblock %}
+
 
 {% block content %}
     <div class="content">
@@ -38,15 +44,30 @@
                             <input class="input-1">
                         </a>
                     </div>
-
+                    {% for note in notes %} 
+                    <div>
+                        {{ note.name }}
+                    </div>
+                    {% endfor %}
                 </nav>  
             </div>
 
         </nav>
 
         <div class="large-box">
-            
+            <form action="{% url 'note_create' %}" method="post" >
+                {% csrf_token %}
+                <input name="name" placeholder="name og note">
+                <textarea name="body" rows="10"></textarea>
+                <button type="submit">
+                    Save
+                </button>
+            </form>
         </div>
 
     </div>
+{% endblock %}
+
+{% block js %}
+    <script src="{% static 'notes/script.js' %}"></script>
 {% endblock %}
