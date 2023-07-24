@@ -177,7 +177,9 @@ body{
     display: flex;
     flex-direction: column;
     margin-top: 15px;
-    margin-left: 10px;
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .list-one{
@@ -219,6 +221,8 @@ body{
 .name-input{
     border: 0;
     background: #EEEEEE;
+    font-weight: bold;
+    font-size: 30px;
 }
 
 
@@ -226,12 +230,17 @@ body{
     border: 0;
     background: #f8f8f8;
     width: 80vw;
+    font-weight: bold;
+    font-size: 20px;
 }
 
 .button__div button{
     border: 0;
     border-radius: 5px;
     background: #fff;
+    font-weight: bold;
+    height: 30px;
+    width: 125px;
 }
 
 
