@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_protect
 from notes.services.note import note_create, note_delete
-from notes.selectors.note import get_notes, all_notes
+from notes.selectors.note import get_notes, all_notes, get_note
 from django.http import HttpResponse
 from django.urls import reverse
 import json
@@ -32,3 +32,10 @@ def delete_note_view(request):
     for note in notes:
         note_delete(note.id)
     return redirect(reverse('work-page'))
+
+def view_note_view(request, id):
+    context = {
+        "note": get_note(id),
+        "notes": all_notes()
+    }
+    return render(request, 'notes/note-view.html' , context)

@@ -5,3 +5,6 @@ def all_notes():
 
 def get_notes(ids):
     return Note.objects.filter(id__in = ids)
+
+def get_note(id):
+    return Note.objects.get(id = id)

@@ -1,0 +1,79 @@
+{% extends "index.html" %}
+{% load static %}
+
+
+{% block css %}
+    <link class="light" rel="stylesheet" href="{% static 'notes/work.css' %}" >
+{% endblock %}
+
+
+{% block content %}
+    <div class="content">
+        <nav class="boxes">
+            <div class="mini-box">
+
+                <div class="home-div">
+                    <img class="home-img" src="{% static 'notes/img/home.svg' %}">
+                    <a href="/" class="home-text">To the main page</a>
+                </div>
+                <div class="settings-div">
+                    <img class="settings-img" src="{% static 'notes/img/settings.svg' %}">
+                    <a class="settings-text">Settings</a>
+                </div>
+
+                <div class="glass-div">
+                    <img class="glass-img" src="{% static 'notes/img/glass.svg' %}">
+                    <a class="glass-text"><b>Search</b></a>
+                </div>
+            
+            
+            </div>
+            <div class="mid-box">
+                <nav class="mid-box__nav">
+                    <button onclick="Delete_note()" class="trash"><img src="{% static 'notes/img/trash.svg' %}"></button>
+                    <a class="pen"><img src="{%static 'notes/img/pen.svg'%}"></a>
+                    <a class="plus" onclick="ListOne()">+</a> 
+                </nav>
+
+
+                
+                <nav class="mid-box__list">
+                    
+                    {% for note in notes %} 
+                    <div>
+                        <input class="form-check-input note-select" type="checkbox" data-id="{{ note.id }}">
+                        <a href="{% url 'note_view' id=note.id %}">{{ note.name }}</a>
+                    </div>
+                    {% endfor %}
+                </nav>  
+            </div>
+
+        </nav>
+
+        <div class="large-box">
+            <form action="" method="post" >
+                {% csrf_token %}
+                
+                <div class="work-content__div">
+
+                    <div class="name-input__div">
+                        <input class="name-input" name="name" placeholder="Name of note" value="{{ note.name }}">
+                    </div>
+
+                    <div class="text-input__div">
+                        <textarea class="text-input" name="body" rows="10">{{ note.body }}</textarea>
+                    </div>
+
+                    <div class="button__div">
+                        <button type="submit">
+                            Save
+                        </button>
+                    </div>
+
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+{% endblock %}
