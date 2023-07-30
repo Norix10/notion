@@ -212,6 +212,7 @@ body{
     border-radius: 20px;
     background: #EEEEEE;
     flex: 3.5;
+    width: 10vw;
 }   
 
 .work-content__div{
@@ -229,7 +230,7 @@ body{
 .text-input{
     border: 0;
     background: #f8f8f8;
-    width: 80vw;
+    width: 76.8vw;
     font-weight: bold;
     font-size: 20px;
 }
