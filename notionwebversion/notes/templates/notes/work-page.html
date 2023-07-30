@@ -39,13 +39,9 @@
                 
                 <nav class="mid-box__list">
                     
-                    <div class="list-one unvisible">
-                        <a>
-                            <input class="input-1">
-                        </a>
-                    </div>
                     {% for note in notes %} 
                     <div>
+                        <input class="form-check-input note-select" type="checkbox" data-id="{{ note.id }}">
                         {{ note.name }}
                     </div>
                     {% endfor %}

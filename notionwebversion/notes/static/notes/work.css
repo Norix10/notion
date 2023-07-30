@@ -182,23 +182,6 @@ body{
     font-size: 20px;
 }
 
-.list-one{
-    text-align: center;
-    cursor: pointer;
-    color: #fff;
-    border-radius: 7px;
-    background: #2E3239;
-    padding: 7px 27px 7px 27px;
-    font-weight: bold;
-    margin: 0 14px;
-    transition: 0.5s all;
-}    
-
-.mid-box__list input:first-child{
-    background-color: #2E3239;
-    border: 0;
-    color: #fff;
-}
 
 .unvisible{
     display: none;

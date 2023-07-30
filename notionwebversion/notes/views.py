@@ -1,9 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.views.decorators.csrf import csrf_protect
 from notes.services.note import note_create, note_delete
-from notes.selectors.note import all_notes
+from notes.selectors.note import get_notes, all_notes
 from django.http import HttpResponse
-
+from django.urls import reverse
+import json
 
 # Create your views here.
 
@@ -21,11 +22,13 @@ def create_note_view(request):
 
     note_create(name, body)
 
-    return work_page_view(request)
+    return redirect(reverse('work-page'))
 
 @csrf_protect
 def delete_note_view(request):
-    notes = all_notes()
+    ids = list(map(int, json.loads(request.body)))
+    print(ids)
+    notes = get_notes(ids)
     for note in notes:
         note_delete(note.id)
-    return HttpResponse(status=201)
+    return redirect(reverse('work-page'))
