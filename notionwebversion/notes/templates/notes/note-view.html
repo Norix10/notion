@@ -51,9 +51,8 @@
         </nav>
 
         <div class="large-box">
-            <form action="" method="post" >
+            <form action="{% url 'note_view' id=note.id %}" method="POST" >
                 {% csrf_token %}
-                
                 <div class="work-content__div">
 
                     <div class="name-input__div">
