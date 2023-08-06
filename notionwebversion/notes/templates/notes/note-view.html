@@ -14,7 +14,7 @@
 
                 <div class="home-div">
                     <img class="home-img" src="{% static 'notes/img/home.svg' %}">
-                    <a href="/" class="home-text">To the main page</a>
+                    <a href="/work-page" class="home-text">To the main page</a>
                 </div>
                 <div class="settings-div">
                     <img class="settings-img" src="{% static 'notes/img/settings.svg' %}">
@@ -42,7 +42,7 @@
                     {% for note in notes %} 
                     <div>
                         <input class="form-check-input note-select" type="checkbox" data-id="{{ note.id }}">
-                        <a href="{% url 'note_view' id=note.id %}">{{ note.name }}</a>
+                        <a style="color: black; text-decoration: none;" class="note-text__py" href="{% url 'note_view' id=note.id %}">{{ note.name }}</a>
                     </div>
                     {% endfor %}
                 </nav>  

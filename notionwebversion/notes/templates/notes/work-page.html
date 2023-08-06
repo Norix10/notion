@@ -42,7 +42,7 @@
                     {% for note in notes %} 
                     <div>
                         <input class="form-check-input note-select" type="checkbox" data-id="{{ note.id }}">
-                        <a href="{% url 'note_view' id=note.id %}">{{ note.name }}</a>
+                        <a style="color: black; text-decoration: none;" href="{% url 'note_view' id=note.id %}">{{ note.name }}</a>
                     </div>
                     {% endfor %}
                 </nav>  

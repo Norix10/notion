@@ -227,4 +227,7 @@ body{
     width: 125px;
 }
 
-
+.note-text__py{
+    text-decoration: none;
+    color: #000;
+}
